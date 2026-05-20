@@ -5,6 +5,7 @@ int countingValleys(int steps, string path) {
     for(char step : path){
         if(step == 'U'){
             level++;
+            //只有從山谷下回到海平面才是走出山谷
             if(level == 0) num_valley++;
         }
         else{
